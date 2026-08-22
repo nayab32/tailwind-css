@@ -1,8 +1,8 @@
 import React from "react";
-import { assets } from "../assets/asset.js";
 import {motion} from "framer-motion";
 import profileImg from "../assets/profile-png.jpeg";
 import { FaCode, FaReact, FaJs, FaCss3Alt } from "react-icons/fa";
+
 
 const aboutInfo = [
   {
@@ -60,7 +60,7 @@ return(
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
-            className="w-full max-w-md mx-auto h-auto rounded-2xl object-cover"
+            className="w-[500px] h-[500px] rounded-2xl object-cover"
             src={profileImg}
              alt="Profile"
             />
@@ -75,7 +75,7 @@ return(
              viewport={{once:false, amount:0.2}} 
              className="md:w-1/2">
             <div className="rounded-2xl p-8">
-             <h3 className="text-2xl font-semihold mb-6">My Journey</h3>
+             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <p className="text-gray-300 mb-6">My web development journey started with curiosity and a desire
               to learn new skills. I began exploring HTML, CSS, JavaScript,
               React, and Tailwind CSS, learning step by step through practice
@@ -86,7 +86,7 @@ return(
              becoming a confident and skilled web developer.</p>
 
             {/* cards*/}
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+           {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {
             aboutInfo.map((data, index)=>(
            <div key={index} className="bg-dark-300 rounded-2xl p-6 transition-transform
@@ -100,7 +100,7 @@ return(
                 ))
                     }
 
-       </div>
+       </div> */}
 
         </div>
         </motion.div>
